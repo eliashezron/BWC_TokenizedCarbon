@@ -38,6 +38,12 @@ export default function Header() {
                     >
                       List
                     </a>
+                    <a
+                      href="/swap"
+                      className="inline-flex items-center border-b-2 border-black px-1 pt-1 text-sm font-medium text-gray-900"
+                    >
+                      Swap
+                    </a>
                     
                   </div>
                 </div>
