@@ -2,6 +2,7 @@ import { Disclosure } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { ConnectButton } from "@rainbow-me/rainbowkit";
 import Image from "next/image";
+import Link from 'next/link'; 
 
 export default function Header() {
     return (
@@ -26,24 +27,21 @@ export default function Header() {
                     <Image className="block h-8 w-auto sm:block lg:block" src="/logo.svg" width="24" height="24" alt="Celo Logo" />
                   </div>
                   <div className="hidden sm:ml-6 sm:flex sm:space-x-8">
-                    <a
-                      href="/"
-                      className="inline-flex items-center border-b-2 border-black px-1 pt-1 text-sm font-medium text-gray-900"
-                    >
-                      Home
-                    </a>
-                    <a
-                      href="/list"
-                      className="inline-flex items-center border-b-2 border-black px-1 pt-1 text-sm font-medium text-gray-900"
-                    >
-                      List
-                    </a>
-                    <a
-                      href="/swap"
-                      className="inline-flex items-center border-b-2 border-black px-1 pt-1 text-sm font-medium text-gray-900"
-                    >
-                      Swap
-                    </a>
+                  <Link href="/">
+                      <button className="inline-flex items-center border-b-2 border-black px-1 pt-1 text-sm font-medium text-gray-900">
+                        Home
+                      </button>
+                    </Link>
+                    <Link href="/list">
+                      <button className="inline-flex items-center border-b-2 border-black px-1 pt-1 text-sm font-medium text-gray-900">
+                        List
+                      </button>
+                    </Link>
+                    <Link href="/swap">
+                      <button className="inline-flex items-center border-b-2 border-black px-1 pt-1 text-sm font-medium text-gray-900">
+                        Swap
+                      </button>
+                    </Link>
                     
                   </div>
                 </div>

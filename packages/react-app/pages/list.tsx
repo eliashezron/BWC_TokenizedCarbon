@@ -1,22 +1,23 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState , useCallback} from "react";
 import ToucanClient, { UserRetirementsResponse } from "toucan-sdk";
 import { useAccount } from "wagmi";
 
 export default function List() {
 
+
   const toucan = new ToucanClient("alfajores");
   const { address } = useAccount();
   const [retirements, setRetirements] = useState<UserRetirementsResponse[]>([]);
 
-  const getUserRetirements = async() => {
+  const getUserRetirements = useCallback(async() => {
     let currentAddress = address?.toLocaleLowerCase() as string;
     const result = await toucan.fetchUserRetirements(currentAddress);
     result && setRetirements(result);
-  }
+  }, [address]);
 
   useEffect(()=> {
     getUserRetirements();
-  }, []);
+  }, [getUserRetirements]);
 
   return (
     <div>

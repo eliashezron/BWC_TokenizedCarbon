@@ -42,7 +42,7 @@ function App() {
       setTokenIn(defaultTokenOut);
       
     }
-  }, []);
+  }, [tokens]);
   
 
   const open = (choiceType: string) => {
