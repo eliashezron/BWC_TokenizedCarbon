@@ -6,7 +6,7 @@ import Link from 'next/link';
 
 export default function Header() {
     return (
-      <Disclosure as="nav" className="bg-prosperity border-b border-black">
+      <Disclosure as="nav" className= "border-b border-black" style={{ backgroundColor: '#50C878' }}>
         {({ open }) => (
           <>
             <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">

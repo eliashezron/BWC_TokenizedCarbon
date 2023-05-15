@@ -174,7 +174,8 @@ function App() {
 
             <button
               onClick={() => open('from')}
-              className="text-white text-xs bg-blue-500 rounded-full px-2 py-1"
+              className="text-white text-xs  rounded-full px-2 py-1"
+              style={{ backgroundColor: '#50C878' }}
             >
               Change
             </button>
@@ -197,7 +198,8 @@ function App() {
 
                 <button
                   onClick={() => open('to')}
-                  className="text-white text-xs bg-blue-500 rounded-full px-2 py-1"
+                  className="text-white text-xs  rounded-full px-2 py-1"
+                  style={{ backgroundColor: '#50C878' }}
                 >
                   Change
                 </button>
@@ -222,7 +224,7 @@ function App() {
           <>
             <h4 className="text-neutral-700 text-sm mb-2">Estimated gas fee: {gasPrice}</h4>
             {address && 
-            <button className="w-full p-3 bg-blue-600 rounded-md text-white" onClick={()=>swap()}>
+            <button className="w-full p-3 rounded-md text-white" onClick={()=>swap()} style={{ backgroundColor: '#50C878' }}>
               Swap
             </button>
             }

@@ -28,7 +28,7 @@ export default function List() {
               retirements.length && (
                 <div className="overflow-hidden ring-1 ring-black">
                   <table className="min-w-full divide-y divide-black">
-                    <thead className="bg-prosperity">
+                    <thead style={{ backgroundColor: '#50C878' }}>
                       <tr>
                         <th scope="col" className="py-3.5 pl-4 pr-3 text-left text-sm font-semibold text-gray-900 sm:pl-6">
                           Token Name
