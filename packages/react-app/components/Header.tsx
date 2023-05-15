@@ -34,7 +34,7 @@ export default function Header() {
                     </Link>
                     <Link href="/list">
                       <button className="inline-flex items-center border-b-2 border-black px-1 pt-1 text-sm font-medium text-gray-900">
-                        List
+                        LeaderBoard
                       </button>
                     </Link>
                     <Link href="/swap">
