@@ -2,6 +2,8 @@
 ---
 ![](assets/ci.png)
 
+---
+
 ## Project Description
 Welcome to our Climate Initiative, an innovative solution built on the Celo Blockchain that focuses on reducing our carbon footprint. This application presents a unique opportunity for users to offset carbon credits by redeeming NCT for TC02, a process that directly contributes to the environmental well-being.
 
